@@ -1,0 +1,24 @@
+body {
+    width: 100vw;
+}
+
+.contact-container ul {
+    list-style: none;
+    display: inline-flex;
+    width: 95%;
+    /*justify-content: space-between;*/
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+label img,
+li img {
+    height: 25px;
+    display: inline;
+    justify-self: center;
+    /*margin: 0;
+    padding: 0;*/
+}

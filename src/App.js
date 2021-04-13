@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <header className="App-header">
+        <header className="header">
           <h1>Michal Front</h1>
           <h3>Full-Stack Web Developer</h3>
           <Contact />
