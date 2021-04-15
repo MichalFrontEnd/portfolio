@@ -12,9 +12,9 @@ const projects = [
     url: "http://campuscat.herokuapp.com/",
     features: ["Registration/Login", "Canvas signature", "Editable user profile", "Signers page, can be filtered by city", "Routing middleware that allows only logged-in users to view certain pages, and redirects", "logged-out users to the registration page."],
     gif: "./gifs/Campus-Cat-Preview.gif",
-    img: "./images/petition" //render images 1-5 dynamically?,
+    imgsrc: "./images/petition", //render images 1-5 dynamically?
     git: "https://github.com/MichalFrontEnd/campus-cat",
-
+    folder: "petition"
 
     }]
 }
