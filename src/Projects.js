@@ -10,11 +10,12 @@ const projects = [
     desc: "Student project at Spiced Academy. In this project I built a petition site that can be found here. The cause for this petition is to have cats on campuses, starting with the Spiced Academy campus, for the well-being of the students.",
     stack: "Node (Express), PostgreSQL, jQuery, Handlebars, Canvas, Adobe Photoshop. Deployed on Heroku.",
     url: "http://campuscat.herokuapp.com/",
-    features: ["Registration/Login", "Canvas signature", "Editable user profile", "Signers page, can be filtered by city", "Routing middleware that allows only logged-in users to view certain pages, and redirects", "logged-out users to the registration page."],
+    features: ["Registration/Login", "Canvas signature", "Editable user profile", "Signers page, can be filtered by city", "Routing middleware that allows only logged-in users to view certain pages, and redirects", "logged-out users to the registration page"],
     gif: "./gifs/Campus-Cat-Preview.gif",
     imgsrc: "./images/petition", //render images 1-5 dynamically?
     git: "https://github.com/MichalFrontEnd/campus-cat",
     folder: "petition",
+    class: "toleft,"
     },
     {id: 1,
     name: "pattern board",
@@ -22,11 +23,38 @@ const projects = [
     desc: "Student project at Spiced Academy. In this project I built an image board focusing on different types of patterns, for design purposes. A logged-in user can add photos to the board, comment on them and share it on pinterest.",
     stack: "Node (Express), PostgreSQL, Vue.js, AWS (S3), Axios.",
     url: "",
-    features: ["Registration/Login", "Canvas signature", "Editable user profile", "Signers page, can be filtered by city", "Routing middleware that allows only logged-in users to view certain pages, and redirects", "logged-out users to the registration page."],
-    gif: "./gifs/Campus-Cat-Preview.gif",
-    imgsrc: "./images/petition", //render images 1-5 dynamically?
-    git: "https://github.com/MichalFrontEnd/pattern-board",
-    folder: "petition",
+    features: ["Registration/Login", "Photo Upload", "Modal display for clicked image", "Commenting", "Hash browsing", "Infinite scrolling", "Pinterest sharing"],
+    gif: "",
+    imgsrc: "./images/imgboard", //render images 1-5 dynamically?
+    git: "",
+    folder: "imgboard",
+    class: "toright,"
+    },
+    {id: 2,
+    name: "threads",
+    liner: "An image board with registration, login, photo upload, hashbrowsing and a comment section.",
+    desc: "Student project at Spiced Academy. In this project I built an image board focusing on different types of patterns, for design purposes. A logged-in user can add photos to the board, comment on them and share it on pinterest.",
+    stack: "Node (Express), PostgreSQL, Vue.js, AWS (S3), Axios.",
+    url: "",
+    features: ["Registration/Login", "Photo Upload", "Modal display for clicked image", "Commenting", "Hash browsing", "Infinite scrolling", "Pinterest sharing"],
+    gif: "./gifs/threads-preview.gif",
+    imgsrc: "./images/threads", //render images 1-5 dynamically?
+    git: "",
+    folder: "threads",
+    class: "toleft,"
+    },
+    {id: 3,
+    name: "furmature",
+    liner: "An image board with registration, login, photo upload, hashbrowsing and a comment section.",
+    desc: "Student project at Spiced Academy. In this project I built an image board focusing on different types of patterns, for design purposes. A logged-in user can add photos to the board, comment on them and share it on pinterest.",
+    stack: "Node (Express), PostgreSQL, Vue.js, AWS (S3), Axios.",
+    url: "",
+    features: ["Registration/Login", "Photo Upload", "Modal display for clicked image", "Commenting", "Hash browsing", "Infinite scrolling", "Pinterest sharing"],
+    gif: "./gifs/FurMatchure-preview",
+    imgsrc: "./images/final", //render images 1-5 dynamically?
+    git: "",
+    folder: "final",
+    class: "toright,"
     },
     ]
 }
