@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Link, BrowserRouter, Route } from "react-router-dom";
 import Contact from "./Contact"
+import Projects from "./Projects"
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
           <h3>Full-Stack Web Developer</h3>
           <Contact />
         </header>
+        <div className="project-container">
+          <Projects />
+        </div>
       </div>
     </BrowserRouter>
   );
