@@ -22,3 +22,16 @@ li img {
     /*margin: 0;
     padding: 0;*/
 }
+
+.proj-bg {
+    min-height: max-content;
+    background-color: rgb(55, 182, 200);
+    width: 90%;
+}
+
+.toleft {
+    background-color: #fff;
+    width: 95%;
+    border-radius: 2%;
+    color: red;
+}

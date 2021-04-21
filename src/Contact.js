@@ -12,11 +12,11 @@ export default function Contact() {
                 </li>
                 <li>
                     <label><img src='./images/li.png' alt="LinkedIn" ></img></label>
-                    <p>https://www.linkedin.com/in/michal-front/</p>
+                    <p>linkedin.com/in/michal-front/</p>
                 </li>
                 <li>
                     <label><img src='./images/git.png' alt="GitHub" ></img></label>
-                    <p>http://github.com/MichalFrontEnd</p>
+                    <p>github.com/MichalFrontEnd</p>
                 </li>
                 <li>
                     <label><img src='./images/house.png' alt="house" ></img></label>

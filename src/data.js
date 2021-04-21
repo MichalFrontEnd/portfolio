@@ -1,4 +1,4 @@
-export const projects = [
+export const projectsarr = [
     {id: 0,
     name: "campus cat",
     liner: "Online petition with registration, login, canvas signature and editable user profile.",
@@ -10,7 +10,7 @@ export const projects = [
     imgsrc: "./images/petition", //render images 1-5 dynamically?
     git: "https://github.com/MichalFrontEnd/campus-cat",
     folder: "petition",
-    class: "toleft,"
+    toleft: true
     },
     {id: 1,
     name: "pattern board",
@@ -23,7 +23,7 @@ export const projects = [
     imgsrc: "./images/imgboard", //render images 1-5 dynamically?
     git: "",
     folder: "imgboard",
-    class: "toright,"
+    toleft: false
     },
     {id: 2,
     name: "threads",
@@ -36,7 +36,7 @@ export const projects = [
     imgsrc: "./images/threads", //render images 1-5 dynamically?
     git: "https://github.com/MichalFrontEnd/threads",
     folder: "threads",
-    class: "toleft,"
+    toleft: true
     },
     {id: 3,
     name: "furmature",
@@ -49,6 +49,6 @@ export const projects = [
     imgsrc: "./images/final", //render images 1-5 dynamically?
     git: "https://github.com/MichalFrontEnd/FurMatchure",
     folder: "final",
-    class: "toright,"
+    toleft: false
     },
     ]
