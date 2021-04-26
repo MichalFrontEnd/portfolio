@@ -22,8 +22,13 @@ export default function Projects() {
                     <div key={i} className="proj-bg">
                         <div className={proj.class}>
                             <h2>{proj.name}</h2>
-                            {/*{proj.gif && 
-                            (<img src={proj.gif}  alt={`GIF of ${proj.name}`}></img> )}*/}
+                            {proj.gif ? 
+                                <GifPlayer 
+                                    gif={proj.gif}
+                                    still={`${proj.imgsrc}/1.png`}
+                                    //pauseRef={pause => this.pauseGif = pause}
+                                /> : <img src="images\Comingsoon.png" alt="Coming Soon"></img>
+                            }
                             <h4>{proj.liner}</h4>
                         </div>
                     </div>
