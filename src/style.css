@@ -23,6 +23,11 @@ li img {
     padding: 0;*/
 }
 
+a {
+    text-decoration: unset;
+    color: black;
+}
+
 .proj-bg {
     min-height: max-content;
     /*background-color: rgb(55, 182, 200);*/

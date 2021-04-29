@@ -20,8 +20,8 @@ export default function Projects() {
         {projects && 
             projects.map((proj, i)=> {
                 return (
-                    <Link to= {`/${proj.folder}`} key={i} className="proj-bg">
-                        <div className={proj.class}>
+                    <div key={i} className="proj-bg">
+                        <Link to= {`/project/${proj.folder}`} className={proj.class}>
                             <h2>{proj.name}</h2>
                             {proj.gif ? 
                                 <GifPlayer 
@@ -32,8 +32,8 @@ export default function Projects() {
                                 /> : <img src="images\Comingsoon.png" alt="Coming Soon"></img>
                             }
                             <h4>{proj.liner}</h4>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                 );
             })}
     </Fragment>
