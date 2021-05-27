@@ -1,31 +1,70 @@
-body {
+.App {
+    background-color: rgb(164, 230, 228);
     width: 100vw;
+    height: 100%;
+    margin: 0;
 }
 
-.contact-container ul {
+.navi {
+    color: red !important;
+    font-size: large;
+    background-color: rgb(164, 230, 228);
+}
+
+#navlink {
+    background-color: transparent !important;
+}
+
+.header-container {
+    border: 10px double rgb(248, 229, 144);
+    border-radius: 2%;
+    background-image: url(zigzag-937583.jpg);
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-container h1 {
+    font-family: "Monoton", cursive;
+    font-size: 10rem;
+    color: pink;
+    word-spacing: 10rem;
+    font-weight: 400;
+}
+
+.sub-header {
+    font-family: "Fugaz One", cursive;
+    color: pink;
+    font-size: 4rem;
+}
+
+.contact-container {
     list-style: none;
     display: inline-flex;
     width: 95%;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
 }
 
-li {
+.contact-container div {
     display: flex;
     justify-content: space-between;
 }
 
-label img,
-li img {
+.contact-container div img {
     height: 25px;
     display: inline;
     justify-self: center;
-    /*margin: 0;
-    padding: 0;*/
 }
 
-a {
+/*a {
     text-decoration: unset;
     color: black;
+}*/
+
+.capitalize {
+    text-transform: capitalize;
 }
 
 .proj-bg {

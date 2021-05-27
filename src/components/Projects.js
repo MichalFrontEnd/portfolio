@@ -14,15 +14,13 @@ export default function Projects() {
     },[projects]);
 
     return (
-   
-    <Fragment>
-
+       <Fragment>
         {projects && 
-            projects.map((proj, i)=> {
+            projects.slice(0).reverse().map((proj, i)=> {
                 return (
                     <div key={i} className="proj-bg">
-                        <Link to= {`/project/${proj.folder}`} className={proj.class}>
-                            <h2>{proj.name}</h2>
+                        {/*<Link to= {`/project/${proj.folder}`} className={proj.class}>*/}
+                            <h2 className="capitalize">{proj.name}</h2>
                             {proj.gif ? 
                                 <GifPlayer 
                                     gif={proj.gif}
@@ -31,8 +29,11 @@ export default function Projects() {
 
                                 /> : <img src="images\Comingsoon.png" alt="Coming Soon"></img>
                             }
-                            <h4>{proj.liner}</h4>
-                        </Link>
+                            <h3>{proj.liner}</h3>
+                            <p>Stack: {proj.stack}</p>
+                            <p className="giturl">Check out the <a href={proj.git}>Code</a></p>
+                            {proj.url && ( <p className="projurl">Check out the <a href={proj.url}>Project</a></p>)} 
+                        {/*</Link>*/}
                     </div>
                 );
             })}

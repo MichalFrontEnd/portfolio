@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import { Link, BrowserRouter, Route } from "react-router-dom";
-import Contact from "./Contact"
-import Projects from "./Projects"
+import { Link, HashRouter, Route } from "react-router-dom";
+import Contact from "./components/Contact"
+import Projects from "./components/Projects"
+import Header from "./components/Header"
+import Navibar from "./components/Navbar"
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
-        <header className="header">
-          <h1>Michal Front</h1>
-          <h3>Full-Stack Web Developer</h3>
-          <Contact />
-        </header>
+      <Navibar/>
+        <Header />
         <div className="project-container">
           <Projects />
         </div>
       </div>
-    </BrowserRouter>
+      <Contact />
+
+    </HashRouter>
   );
 }
 
