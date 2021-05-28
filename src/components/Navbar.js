@@ -4,17 +4,15 @@ import { Navbar, Nav, NavItem, NavLink, Container, Row, Col} from 'reactstrap';
 
 export default function Navibar() {
     return (
-
             <Row>
                 <Navbar expand="md">
                     <Nav className="navi" tabs>
-                        <NavLink transparent className="navlink" href="#" active>Home</NavLink>
+                        <NavLink transparent id="navlink" href="#" active>Home</NavLink>
                         <NavLink href="#" active>Projects</NavLink>
                         <NavLink href="#" active>About</NavLink>
                     </Nav>
                 </Navbar>
             </Row>
-
     )
 }
 
