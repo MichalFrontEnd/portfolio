@@ -5,14 +5,22 @@
     margin: 0;
 }
 
-.navi {
+/*.navi {
     color: red !important;
     font-size: large;
     background-color: rgb(164, 230, 228);
-}
+}*/
 
 #navlink {
     background-color: transparent !important;
+    border: 5px double rgb(248, 229, 144);
+    border-radius: 5%;
+    border-bottom: none;
+    margin-bottom: -10px;
+    margin-left: 10px;
+    color: pink;
+    font-family: "Fugaz One", cursive;
+    font-size: 1rem;
 }
 
 .header-container {

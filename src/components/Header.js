@@ -7,7 +7,7 @@ export default function Header() {
         <Container fluid className="header-container">
             <h1>Michal Front</h1>
             <h3 className="sub-header">Full-Stack Web Developer</h3>
-            <button>Placeholder</button>
+
         </Container>
     </Jumbotron>
     )
