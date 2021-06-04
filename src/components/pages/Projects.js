@@ -1,6 +1,6 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
-import {projectsarr} from './data'
+import {projectsarr} from './../data'
 import classNames from 'classnames'
 import GifPlayer from 'react-gif-player'
 
@@ -10,7 +10,6 @@ export default function Projects() {
 
     useEffect(()=> {
         setProjects(projectsarr);
-
     },[projects]);
 
     return (

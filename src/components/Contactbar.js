@@ -1,11 +1,9 @@
 import React from "react"
 
-export default function Contact() {
-
+export default function Contactbar() {
 
     return (
         <div className="contact-container">
-            {/*<div>*/}
                 <div>
                     <img src='./images/email.png' alt="email" ></img>
                     <p>michal.front@outlook.com</p>
@@ -23,6 +21,5 @@ export default function Contact() {
                     <p>Berlin, Germany</p>
                 </div>
             </div>
-        //</div>
     )
 }
