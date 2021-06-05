@@ -10,11 +10,11 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      <Navibar>
-      </Navibar>
-      <Route exact path="/" component={Home}></Route>
-      <Route exact path="/projects" component={Projects}></Route>
-        <Route exact path="/about" component={About}></Route>
+        <Navibar>
+        </Navibar>
+        <Route exact path="/" component={Home}></Route>
+        <Route exact path="/projects" component={Projects}></Route>
+          <Route exact path="/about" component={About}></Route>
 
         {/*<Header />*/}
         {/*<div className="project-container">

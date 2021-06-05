@@ -20,10 +20,10 @@ html,
 }
 
 .header-container,
-.about-container {
+.gen-container {
     border: 10px double rgb(248, 229, 144);
     border-radius: 2%;
-    background-image: url(zigzag-937583.jpg);
+    background-image: url(/src/components/assets/img/zigzag-937583.jpg);
     background-color: rgb(164, 230, 228);
     color: pink;
     height: 80vh;
