@@ -1,18 +1,25 @@
 import React, {useState} from 'react'
 import { Navbar, Nav, NavLink, Row, Col, activeKey, eventKey} from 'reactstrap';
+import classnames from 'classnames';
 
 
 export default function Navibar() {
     const [active, setActive] = useState(false);
+    console.log('active: ', active);
+//  const [activeTab, setActiveTab] = useState('1');
+
+//  const toggle = tab => {
+//    if(activeTab !== tab) setActiveTab(tab);
+//  }
 
     return (
             <Row>
                 <Col sm={{offset:8}}>
                     <Navbar>
-                        <Nav activeKey="/home">
-                            <NavLink id="navlink" eventKey="/home" href="/">Home</NavLink>
-                            <NavLink href="/projects" eventKey="/projects" id="navlink">Projects</NavLink>
-                            <NavLink href="/about" eventKey="/about" id="navlink">About</NavLink>
+                        <Nav tabs onClick={(k) => setActive(true)} >
+                            <NavLink active id="navlink" href="/">Home</NavLink>
+                            <NavLink active={active} href="/projects"  id="navlink">Projects</NavLink>
+                            <NavLink active={active} href="/about" id="navlink">About</NavLink>
                         </Nav>
                     </Navbar>
                 </Col>
