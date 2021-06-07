@@ -23,7 +23,7 @@ html,
 .gen-container {
     border: 10px double rgb(248, 229, 144);
     border-radius: 2%;
-    background-image: url(/src/components/assets/img/zigzag-937583.jpg);
+    background-image: url(/src/components/assets/img/zigzag1.jpg);
     background-color: rgb(180, 249, 248);
     color: pink;
     height: 80vh;
@@ -31,15 +31,32 @@ html,
 
 .about-container {
     display: flex;
-    justify-content: flex-start;
+    height: min-content;
+}
+
+.about-container .about-text {
+    margin: 3%;
+    font-family: "PT Mono", sans-serif;
+    font-weight: 600;
+}
+
+.about-container p {
+    font-size: 1.15rem;
 }
 
 .about-container img {
-    width: 40%;
-    margin: 3%;
+    width: 38%;
+    margin: 10% 3%;
     border: #fff solid 10px;
     border-bottom: 70px #fff solid;
     transform: rotate(-5deg);
+}
+
+.about-container h2 {
+    /*font-family: "Fugaz One";*/
+    font-family: "Pacifico";
+    font-size: 2.5rem;
+    margin-bottom: 2%;
 }
 
 .header-container {
