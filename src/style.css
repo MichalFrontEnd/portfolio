@@ -1,6 +1,6 @@
 html,
 .App {
-    background-color: rgb(164, 230, 228);
+    background-color: rgb(179, 252, 250);
     width: 100vw;
     height: 100%;
     margin: 0;
@@ -24,9 +24,22 @@ html,
     border: 10px double rgb(248, 229, 144);
     border-radius: 2%;
     background-image: url(/src/components/assets/img/zigzag-937583.jpg);
-    background-color: rgb(164, 230, 228);
+    background-color: rgb(180, 249, 248);
     color: pink;
     height: 80vh;
+}
+
+.about-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-container img {
+    width: 40%;
+    margin: 3%;
+    border: #fff solid 10px;
+    border-bottom: 70px #fff solid;
+    transform: rotate(-5deg);
 }
 
 .header-container {
@@ -59,7 +72,7 @@ html,
     width: 100vw;
     padding: 0 1%;
     justify-content: space-between;
-    background-color: rgb(164, 230, 228);
+    background-color: rgb(179, 252, 250);
     position: absolute;
     bottom: 0;
 }
