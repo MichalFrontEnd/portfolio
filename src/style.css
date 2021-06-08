@@ -10,7 +10,7 @@ html,
 navbar {
     justify-content: flex-end;
     height: 2.25em;
-    margin: 1% 1% 0.5%;
+    margin: 1% 3% 0.5%;
 }
 
 .navlink {
