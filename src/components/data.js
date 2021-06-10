@@ -1,3 +1,4 @@
+
 export const projectsarr = [
     {id: 0,
     name: "campus cat",
@@ -7,6 +8,8 @@ export const projectsarr = [
     url: "http://campuscat.herokuapp.com/",
     features: ["Registration/Login", "Canvas signature", "Editable user profile", "Signers page, can be filtered by city", "Routing middleware that allows only logged-in users to view certain pages, and redirects", "logged-out users to the registration page"],
     gif: "./gifs/Campus-Cat-Preview.gif",
+    img: true,
+    tv: "./images/cctv.png",
     imgsrc: "./images/petition", //render images 1-5 dynamically?
     git: "https://github.com/MichalFrontEnd/campus-cat",
     folder: "petition",
@@ -20,6 +23,8 @@ export const projectsarr = [
     url: "",
     features: ["Registration/Login", "Photo Upload", "Modal display for clicked image", "Commenting", "Hash browsing", "Infinite scrolling", "Pinterest sharing"],
     gif: "",
+    img: false,
+    tv: "./images/cstv.png",
     imgsrc: "./images/imgboard", //render images 1-5 dynamically?
     git: "",
     folder: "imgboard",
@@ -33,6 +38,8 @@ export const projectsarr = [
     url: "",
     features: ["Logo design by Sharo003 @fiverr.com", "Authentcation and password reset via email", "Photo Upload", "Random cover photos with creative themes", "Default profile photo", "Editable bio section", "User search - Also displays the 3 newest users on the site", "Friend request/cancel friend request", "Wall posts - only visible to friends", "Post delete functionality on own wall", "Chat"],
     gif: "./gifs/threads-preview.gif",
+    img: true,
+    tv: "./images/threadstv.png",
     imgsrc: "./images/threads", //render images 1-5 dynamically?
     git: "https://github.com/MichalFrontEnd/threads",
     folder: "threads",
@@ -46,6 +53,8 @@ export const projectsarr = [
     url: "",
     features: ["Drag & drop", "rescaling", "Ordering (Layering)", "Random color generator", "Image upload", "Dumping of temprory photo uploads upon leaving the site", "Image save using DataURL"],
     gif: "./gifs/FurMatchure-preview",
+    img: true,
+    tv: "./images/fmtv.png",
     imgsrc: "./images/final", //render images 1-5 dynamically?
     git: "https://github.com/MichalFrontEnd/FurMatchure",
     folder: "final",

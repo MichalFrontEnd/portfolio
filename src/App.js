@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/projects" component={Projects}></Route>
         <Route exact path="/about" component={About}></Route>
         </div>
-        <Contactbar />
+        {/*<Contactbar />*/}
     </Router>
   );
 }
