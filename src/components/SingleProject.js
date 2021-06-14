@@ -28,31 +28,34 @@ export default function SinglePoject(props) {
         //    </div>
         //</div>
         //<div className="col-lg-4 col-sm-6">
-        //    <div className="portfolio-item">
-        //        <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-        //            <div className="portfolio-hover">
-        //                <div className="portfolio-hover-content"><p>{props.liner}</p></div>
-        //            </div>
-        //            {props.img ? 
-        //                <img className="img-fluid" src={`${props.imgsrc}/1.png`} alt="..." />
-        //                : <img className="img-fluid" src={comingSoon} alt="..."/>
-        //            }
-        //        </a>
-        //        <div className="portfolio-caption">
-        //            <h4 className="portfolio-caption-heading">{props.name}</h4>
-        //            <p className="portfolio-caption-subheading text-muted">{props.liner}</p>
-        //        </div>
+            <div className="portfolio-item">
+                <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                    <div className="portfolio-hover">
+                        <div className="portfolio-hover-content"><p>{props.liner}</p></div>
+                    </div>
+                    {props.img ? 
+                        <img className="img-fluid" src={`${props.imgsrc}/1.png`} alt="..." />
+                        : <img className="img-fluid" src="..." alt="..."/>
+                    }
+                </a>
+                <div className="portfolio-caption">
+                    <h4 className="portfolio-caption-heading">{props.name}</h4>
+                    <p className="portfolio-caption-subheading text-muted">{props.liner}</p>
+                </div>
 
-        //    </div>
+            </div>
         //</div>
 
-        <div className="portfolio-item">
-            <img src={props.tv} alt="project" />
-            <div className="portfolio-caption">
-                <h4 className="portfolio-caption-heading">{props.name}</h4>
-                <p className="portfolio-caption-subheading text-muted">{props.liner}</p>
-            </div>
-        </div>
+        //<div className="portfolio-item">
+        //    <div className="portfolio-hover">
+        //        <div className="portfolio-hover-content"><p>{props.liner}</p></div>
+        //   </div>
+        //    <img src={props.tv} alt="project" />
+        //    <div className="portfolio-caption">
+        //        <h4 className="portfolio-caption-heading">{props.name}</h4>
+        //        <p className="portfolio-caption-subheading text-muted">{props.liner}</p>
+        //    </div>
+        //</div>
     )  
 
 
