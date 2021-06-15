@@ -31,16 +31,13 @@ export default function SinglePoject(props) {
             <div className="portfolio-item">
                 <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                     <div className="portfolio-hover">
-                        <div className="portfolio-hover-content"><p>{props.liner}</p></div>
+                        <div className="portfolio-hover-content"><p>{props.stack}</p></div>
                     </div>
-                    {props.img ? 
-                        <img className="img-fluid" src={`${props.imgsrc}/1.png`} alt="..." />
-                        : <img className="img-fluid" src="..." alt="..."/>
-                    }
+                        <img className="img-fluid" src={props.tv} alt="..." />
                 </a>
                 <div className="portfolio-caption">
-                    <h4 className="portfolio-caption-heading">{props.name}</h4>
-                    <p className="portfolio-caption-subheading text-muted">{props.liner}</p>
+                    <h4 className="portfolio-caption-heading mt-4 capitalize">{props.name}</h4>
+                    <p className="portfolio-caption-subheading text-muted mt-4">{props.liner}</p>
                 </div>
 
             </div>
