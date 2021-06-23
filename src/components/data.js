@@ -52,7 +52,7 @@ export const projectsarr = [
     stack: "Node (Express), PostgreSQL, React, Konva, React-Konva, React Color, Redux, AWS (S3), Socket.io",
     url: "",
     features: ["Drag & drop", "rescaling", "Ordering (Layering)", "Random color generator", "Image upload", "Dumping of temprory photo uploads upon leaving the site", "Image save using DataURL"],
-    gif: "./gifs/FurMatchure-preview",
+    gif: "./gifs/FurMatchure-preview.gif",
     img: true,
     tv: "./images/fmtv.png",
     imgsrc: "./images/final", //render images 1-5 dynamically?

@@ -11,6 +11,7 @@ export default function SinglePoject(props) {
 
   const toggle = () => setModal(!modal);
     return(
+    //Maybe convert to card later?
             <Fragment>
                 {modal && (
             <ProjectModal {...props} toggle={toggle} modal={modal}/>
