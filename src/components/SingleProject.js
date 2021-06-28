@@ -1,7 +1,4 @@
 import React, {Fragment, useState} from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import {Link} from 'react-router-dom';
-import GifPlayer from 'react-gif-player'
 
 import ProjectModal from './ProjectModal'
 

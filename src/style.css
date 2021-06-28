@@ -238,7 +238,8 @@ span:nth-child(4) {
     margin-bottom: 0;
 }
 
-.portfolio-item .portfolio-caption .portfolio-caption-subheading {
+.portfolio-item .portfolio-caption .portfolio-caption-subheading,
+.project h3 {
     font-style: italic;
     font-family: "PT Mono", sans-serif;
 }
@@ -303,25 +304,41 @@ span:nth-child(4) {
     padding: 5%;
 }
 
+/*.portfolio-modal,
+.modal-header {
+    
+}*/
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .project .gallery-container,
 .gif-container {
-    width: 50vw;
+    width: 60vw;
+    align-items: center;
 }
 
 .portfolio-modal p {
     font-family: "PT Mono", sans-serif;
 }
 
+.project h3 {
+    font-size: 1.1rem;
+}
+
 .proj-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "projurl" "giturl";
-}
-.giturl {
-    color: black;
-    /*align-self: end;*/
 }
 
-/*.image-gallery-thumbnail {
-    transform: rotate(-180deg);
-}*/
+.giturl {
+    grid-column: 2 / span 1;
+    text-align: end;
+}
+
+.proj-links a {
+    color: black;
+}
