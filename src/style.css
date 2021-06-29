@@ -52,7 +52,6 @@ navbar {
     height: min-content;
 }
 
-.about-container,
 navbar {
     display: flex;
 }
@@ -68,8 +67,8 @@ navbar {
     margin-top: 3%;
 }
 
-.about-container img {
-    min-width: 38%;
+.about-container .me {
+    width: 90%;
     margin: 5% 3% 3%;
     border: #fff solid 10px;
     border-bottom: 70px #fff solid;
@@ -97,14 +96,20 @@ navbar {
     margin-top: 4%;
 }
 
-.proj-container {
+.proj-container,
+.about-container {
     display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20rem;
-    grid-auto-rows: 20rem;
+    width: 100vw;
+    grid-template-columns: 40% 55%;
+    grid-template-rows: 10rem 10rem 10rem 5rem;
     height: min-content;
     margin: 4% 0 0 4%;
+}
+
+.proj-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20rem 20rem;
+    grid-auto-rows: 20rem;
 }
 
 .sub-header {
@@ -114,25 +119,32 @@ navbar {
 }
 
 .contact-container {
-    list-style: none;
-    display: inline-flex;
-    width: 100vw;
-    padding: 0 1%;
-    justify-content: space-between;
-    background-color: rgb(179, 252, 250);
-    position: absolute;
-    bottom: 0;
-}
-
-.contact-container div {
     display: flex;
+    height: 3rem;
+    grid-area: 4 / 1 / 5 / span 2;
+    width: 90%;
     justify-content: space-between;
+    align-self: end;
+    justify-self: center;
 }
 
-.contact-container div img {
-    height: 25px;
-    display: inline;
-    justify-self: center;
+.contact-item {
+    display: inline-flex;
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 500;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: pink;
+}
+
+.contact-item a:hover {
+    color: rgb(248, 229, 144);
+}
+
+.contact-container .contact-item img {
+    height: 2rem;
 }
 
 .capitalize {
@@ -341,4 +353,14 @@ span:nth-child(4) {
 
 .proj-links a {
     color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .proj-container,
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20rem 20rem;
+        grid-auto-rows: 20rem;
+    }
 }

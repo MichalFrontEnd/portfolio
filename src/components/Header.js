@@ -10,7 +10,6 @@ export default function Header() {
         <Container fluid className="header-container lg">
             <h1 >Michal Front</h1>
             <h3 className="sub-header">Full-Stack Web Developer</h3>
-                {/*<button>Placeholder</button>*/}
             <Link to="/projects">
                 <div class="center-con" fluid>
                     <div class="round">

@@ -1,7 +1,7 @@
 import './App.css';
 import "react-image-gallery/styles/css/image-gallery.css"
 import { Route, BrowserRouter as Router } from "react-router-dom";
-import Contactbar from "./components/Contactbar"
+
 import Navbar from "./components/Navbar"
 
 //pages
@@ -18,8 +18,7 @@ function App() {
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/projects" component={Projects}></Route>
         <Route exact path="/about" component={About}></Route>
-        </div>
-        {/*<Contactbar />*/}
+      </div>
     </Router>
   );
 }
