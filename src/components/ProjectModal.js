@@ -31,7 +31,7 @@ export default function ProjectModal(props) {
                                     gif={props.gif}
                                     still={`${props.imgsrc}/1.png`}
                                     onTogglePlay={(e)=> {setIsPlaying(!isPlaying)}}
-                                /> : <img src="images\Comingsoon.png" alt="Coming Soon"></img>
+                                /> : <img src="./assets/img/Comingsoon.png" alt="Coming Soon"></img>
                             }
                         </div>
                                                 <p>Stack: {props.stack}</p>
