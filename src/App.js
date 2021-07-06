@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Route exact path="/" component={Home}></Route>
+        <Route path="/" component={Home}></Route>
         <Route exact path="/projects" component={Projects}></Route>
         <Route exact path="/about" component={About}></Route>
       </div>
