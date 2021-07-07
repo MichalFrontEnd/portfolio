@@ -3,6 +3,7 @@ import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import GifPlayer from 'react-gif-player'
 import ImageGallery from 'react-image-gallery';
+import comingsoon from "./assets/img/Comingsoon.png"
 
 export default function ProjectModal(props) {
     const [isPlaying, setIsPlaying] = useState(false)
@@ -11,8 +12,8 @@ export default function ProjectModal(props) {
     let images = [];
     for (let i = 1; i <= 5; i++) {
       images.push({
-        original: `${props.imgsrc}/${i}.png`,
-        thumbnail:`${props.imgsrc}/${i}_thumb.png`
+        original: process.env.PUBLIC_URL +  `${props.imgsrc}/${i}.png`,
+        thumbnail:process.env.PUBLIC_URL +  `${props.imgsrc}/${i}_thumb.png`
       });
     }
 
@@ -28,10 +29,10 @@ export default function ProjectModal(props) {
                         <div className="gif-container mb-5">
                             {props.gif ? 
                                 <GifPlayer 
-                                    gif={props.gif}
-                                    still={`${props.imgsrc}/1.png`}
+                                    gif={process.env.PUBLIC_URL + props.gif}
+                                    still={process.env.PUBLIC_URL + `${props.imgsrc}/1.png`}
                                     onTogglePlay={(e)=> {setIsPlaying(!isPlaying)}}
-                                /> : <img src="./assets/img/Comingsoon.png" alt="Coming Soon"></img>
+                                /> : <img src={comingsoon} alt="Coming Soon"></img>
                             }
                         </div>
                                                 <p>Stack: {props.stack}</p>

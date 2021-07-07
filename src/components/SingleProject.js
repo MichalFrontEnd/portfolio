@@ -3,7 +3,9 @@ import React, {Fragment, useState} from 'react';
 import ProjectModal from './ProjectModal'
 
 
+
 export default function SinglePoject(props) {
+    console.log('props.tv: ', props.tv);
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
@@ -12,14 +14,13 @@ export default function SinglePoject(props) {
             <Fragment>
                 {modal && (
             <ProjectModal {...props} toggle={toggle} modal={modal}/>
-
     )}
                 <div className="portfolio-item">
                     <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1" onClick={() => toggle()}>
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content"><p>{props.stack}</p></div>
                         </div>
-                            <img className="img-fluid" src={props.tv} alt="..." />
+                            <img className="img-fluid" src={process.env.PUBLIC_URL + props.tv} alt="..." />
                     </a>
                     <div className="portfolio-caption">
                         <h4 className="portfolio-caption-heading mt-4 capitalize">{props.name}</h4>

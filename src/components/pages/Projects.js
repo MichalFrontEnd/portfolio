@@ -1,9 +1,7 @@
-import React, {Fragment, useEffect, useState} from 'react';
-import {Link} from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
 import {projectsarr} from './../data'
-import classNames from 'classnames'
-import GifPlayer from 'react-gif-player'
 import SinglePoject from '../SingleProject'
+
 
 export default function Projects() {
     const [projects, setProjects] = useState([])
