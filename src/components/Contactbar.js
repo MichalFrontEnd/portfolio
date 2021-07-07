@@ -9,7 +9,7 @@ export default function Contactbar() {
             {contact.map((item, i) => {
                 return (
                     <div className="contact-item" key={i}>
-                        <img src={process.env.PUBLIC_URL + item.icon} alt={item.alt}/>
+                        <img src={window.location.origin + item.icon} alt={item.alt}/>
                         <div></div>
                         {item.link ? (
                             <a href={item.link}><p>{item.text}</p></a> 

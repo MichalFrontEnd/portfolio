@@ -20,7 +20,7 @@ export default function SinglePoject(props) {
                         <div className="portfolio-hover">
                             <div className="portfolio-hover-content"><p>{props.stack}</p></div>
                         </div>
-                            <img className="img-fluid" src={process.env.PUBLIC_URL + props.tv} alt="..." />
+                            <img className="img-fluid" src={window.location.origin + props.tv} alt="..." />
                     </a>
                     <div className="portfolio-caption">
                         <h4 className="portfolio-caption-heading mt-4 capitalize">{props.name}</h4>
