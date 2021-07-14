@@ -12,8 +12,8 @@ export default function ProjectModal(props) {
     let images = [];
     for (let i = 1; i <= 5; i++) {
       images.push({
-        original: window.location.origin +  `${props.imgsrc}/${i}.png`,
-        thumbnail:window.location.origin +  `${props.imgsrc}/${i}_thumb.png`
+        original: window.location.origin +  `/portfolio${props.imgsrc}/${i}.png`,
+        thumbnail:window.location.origin +  `/portfolio${props.imgsrc}/${i}_thumb.png`
       });
     }
 
@@ -29,8 +29,8 @@ export default function ProjectModal(props) {
                         <div className="gif-container mb-5">
                             {props.gif ? 
                                 <GifPlayer 
-                                    gif={window.location.origin + props.gif}
-                                    still={window.location.origin + `${props.imgsrc}/1.png`}
+                                    gif={window.location.origin + `/portfolio${props.gif}`}
+                                    still={window.location.origin + `/portfolio${props.imgsrc}/1.png`}
                                     onTogglePlay={(e)=> {setIsPlaying(!isPlaying)}}
                                 /> : <img src={comingsoon} alt="Coming Soon"></img>
                             }

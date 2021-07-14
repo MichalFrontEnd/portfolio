@@ -9,13 +9,13 @@ export const contact = [
             icon: '/images/li.png',
             alt: 'linkedin',
             text: '/michal-front',
-            link: 'www.linkedin.com/in/michal-front'
+            link: 'http://www.linkedin.com/in/michal-front'
         },
         {
             icon: '/images/git.png',
             alt: 'github',
             text: '/MichalFrontEnd',
-            link: 'www.github.com/MichalFrontEnd'
+            link: 'http://github.com/MichalFrontEnd'
         },
         //{
         //    icon: './images/house.png',
