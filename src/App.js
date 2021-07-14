@@ -12,7 +12,7 @@ import About from './components/pages/About';
 
 function App() {
   return (
-    <Router basename="/portfolio">
+    <Router basename="/">
       <div className="App">
         <Navbar />
         <Route exact path="/" component={Home}></Route>
