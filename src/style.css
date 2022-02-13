@@ -102,11 +102,10 @@ navbar {
 .proj-container,
 .about-container {
     display: grid;
-    width: 95%;
+    width: 100%;
     grid-template-columns: 40% 55%;
     grid-template-rows: 10rem 10rem 10rem 5rem;
     height: min-content;
-    margin: 4% 0 0 4%;
 }
 
 .proj-container {
@@ -262,11 +261,13 @@ span:nth-child(4) {
 
 .portfolio-item {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    justify-self: center;
 }
 
 .portfolio-item {
-    width: 70%;
+    width: 60%;
 }
 
 .portfolio-item,
@@ -320,11 +321,6 @@ span:nth-child(4) {
     margin: 15%;
 }
 
-/*.portfolio-modal,
-.modal-header {
-    
-}*/
-
 .project {
     display: flex;
     flex-direction: column;
@@ -359,12 +355,41 @@ span:nth-child(4) {
     color: black;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .proj-container,
     .about-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 20rem 20rem;
-        grid-auto-rows: 20rem;
+        grid-template-rows: 30rem 30rem;
+        grid-auto-rows: 30rem;
+    }
+
+    .portfolio-item {
+        display: flex;
+        flex-direction: column;
+        height: min-content;
+        width: 90%;
+        /*border: black 3px solid;*/
+    }
+
+    .portfolio-link,
+    .portfolio-link .img-mobile {
+        align-self: center;
+    }
+
+    .portfolio-item .portfolio-caption .portfolio-caption-heading {
+        font-size: 2.75rem;
+        margin-top: 0% !important;
+    }
+
+    .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .portfolio-link .img-mobile {
+        width: 90%;
+        margin-left: 5%;
     }
 }

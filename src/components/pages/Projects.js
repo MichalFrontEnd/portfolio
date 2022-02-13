@@ -12,8 +12,8 @@ export default function Projects() {
     },[projects]);
 
     return (
-    <div className="gen-container">
-        <div className="proj-container">
+    <div className="gen-container" size="m">
+        <div className="proj-container mt-5">
             {projects && 
                 projects.slice(0).reverse().map((proj, i)=> {
                     return (

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody} from 'reactstrap';
 
 import GifPlayer from 'react-gif-player'
 import ImageGallery from 'react-image-gallery';
@@ -35,7 +35,7 @@ export default function ProjectModal(props) {
                                 /> : <img src={comingsoon} alt="Coming Soon"></img>
                             }
                         </div>
-                                                <p>Stack: {props.stack}</p>
+                        <p>Stack: {props.stack}</p>
                         <div className="proj-links">
                             {props.url && ( <p className="projurl">Check out the <a href={props.url}>Project</a></p>)}
                             <p className="giturl">Check out the <a href={props.git}>Code</a></p>
@@ -51,7 +51,6 @@ export default function ProjectModal(props) {
                         </div> :   null }
                     </div>
                 </ModalBody>
-                {/*<ModalFooter><button onClick={props.toggle} close charCode="X"></button></ModalFooter>*/}
             </Modal>
         </div>
     )

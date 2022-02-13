@@ -7,11 +7,11 @@ import Contactbar from "../Contactbar"
 export default function about() {
     return (
         <div>
-            <Container fluid className="gen-container">
-                <div className="about-container">
+            <Container fluid className="gen-container" size="m">
+                <div className="about-container mt-5">
                     <img src={img} alt='mfront' className="me"/>
                     <div className="about-text">
-                        <h2>Hi! I'm Michal Front</h2>
+                        <h2>I'm Michal Front</h2>
                         {/*<Contactbar />*/}
                         <h4>A full stack web developer from Berlin, Germany.</h4>
 
