@@ -17,7 +17,8 @@ export default function SinglePoject(props) {
             {modal && <ProjectModal {...props} toggle={toggle} modal={modal} />}
             <div className="portfolio-item">
                 {width < breakpoint ? (
-                    <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1" onClick={() => toggle()}><img className="img-mobile" src={window.location.origin + `/portfolio${props.tv}`} alt="..." /></a>
+                    <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1" onClick={() => toggle()}><img className="img-mobile" src={window.location.origin + `/portfolio${props.tv}`} alt="..." />
+                    </a>
                 ) : (
                     <a className="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1" onClick={() => toggle()}>
                         <div className="portfolio-hover">
@@ -32,6 +33,10 @@ export default function SinglePoject(props) {
                 <div className="portfolio-caption">
                     <h4 className="portfolio-caption-heading mt-4 capitalize">{props.name}</h4>
                     <p className="portfolio-caption-subheading text-muted mt-4">{props.liner}</p>
+                     {width < breakpoint ?
+                                <p className="portfolio-stack">{props.stack}</p> : null
+
+                     }
                 </div>
             </div>
         </Fragment>
