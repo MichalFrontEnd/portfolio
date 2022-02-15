@@ -19,7 +19,7 @@ export default function ProjectModal(props) {
 
     return (
         <div className="portfolio-shroud" onClick={props.toggle}>
-            <Modal isOpen={props.modal} contentClassName="portfolio-modal capitalize" toggle={props.toggle} centered fluid>
+            <Modal isOpen={props.modal} content ClassName="portfolio-modal capitalize" toggle={props.toggle} centered size="m" fluid>
                 <ModalHeader close="X" onClick={props.toggle}> 
                     <h1>{props.name}</h1>
                 </ModalHeader>
