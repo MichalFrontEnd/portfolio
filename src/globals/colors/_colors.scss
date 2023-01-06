@@ -1,0 +1,16 @@
+$colors: (
+  primary: rgb(179, 252, 250),
+  secondary: rgb(255, 192, 203),
+  text: rgb(0, 0, 0),
+  accent: rgb(248, 229, 144),
+  neutral: rgb(255, 255, 255),
+  light: rgb(205, 230, 235),
+  fog: rgba(167, 166, 166, 0.3),
+  lead: rgb(108, 117, 125),
+);
+
+:root {
+  @each $color, $value in $colors {
+    --#{$color}-color: #{value};
+  }
+}
