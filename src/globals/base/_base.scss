@@ -1,3 +1,5 @@
+@use "../typography/typography" as *;
+
 *,
 body {
   margin: 0;
@@ -5,20 +7,27 @@ body {
   box-sizing: border-box;
 }
 
+body,
+p,
+a {
+  font-family: $main-font;
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
 }
 
-nav {
+navbar {
   display: flex;
 }
 
-nav ul {
+navbar ul {
   list-style-type: none;
   padding-inline-start: 0;
   margin-block: 0;
 }
 
-nav li + li {
+navbar li + li {
   margin-top: 0;
 }
